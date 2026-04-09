@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio DevOps — Template
 
 Template base para el ejercicio integrador del curso **Certificado DevOps — ORT ATI**.
@@ -78,3 +79,5 @@ Todos los lugares a editar están marcados con comentarios `<!-- TODO: -->` en `
 - HTML5 + CSS3 (sin frameworks)
 - Fuentes: [Syne](https://fonts.google.com/specimen/Syne) + [DM Mono](https://fonts.google.com/specimen/DM+Mono) via Google Fonts
 - Servidor: [nginx:alpine](https://hub.docker.com/_/nginx)
+
+
