@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tu Nombre — Portfolio DevOps</title>
+  <title>Luis Mendaro — DevOps Engineer | Full Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -12,7 +12,7 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#hero" class="nav-logo">TU_NOMBRE</a>
+    <a href="#hero" class="nav-logo">LM</a>
     <ul class="nav-links">
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Proyectos</a></li>
@@ -25,12 +25,13 @@
   <!-- HERO -->
   <section id="hero">
     <p class="hero-tag">👋 Hola, soy</p>
-    <h1 class="hero-name">Tu <span>Nombre</span></h1>
-    <p class="hero-role">DevOps Engineer</p>
+    <h1 class="hero-name">Luis <span>Mendaro</span></h1>
+    <p class="hero-role">DevOps Engineer | Full Stack Developer</p>
     <p class="hero-desc">
-      <!-- TODO: escribí una descripción breve sobre vos, tu enfoque y lo que te apasiona -->
-      Estudiante de DevOps apasionado por la automatización, la infraestructura como código
-      y las prácticas de entrega continua. Actualmente completando el Certificado DevOps en ORT ATI.
+      DevOps Engineer y Full Stack Developer con experiencia práctica en infraestructura
+      cloud en AWS (ECS, ALB, Terraform), pipelines CI/CD y desarrollo de aplicaciones
+      web con React y Node.js. Busco mi primera oportunidad profesional donde pueda
+      aportar tanto en automatización de infraestructura como en desarrollo de producto.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">Ver proyectos</a>
@@ -52,22 +53,23 @@
           Control de versiones
         </div>
         <ul class="skill-list">
-          <!-- TODO: editá los tags con tus herramientas reales -->
           <li class="skill-tag">Git</li>
           <li class="skill-tag">GitHub</li>
-          <li class="skill-tag">GitLab</li>
+          <li class="skill-tag">Git Flow</li>
         </ul>
       </div>
 
       <div class="skill-card">
         <div class="skill-card-title">
           <span class="skill-dot"></span>
-          CI/CD
+          CI/CD & Seguridad
         </div>
         <ul class="skill-list">
           <li class="skill-tag">GitHub Actions</li>
-          <li class="skill-tag">Jenkins</li>
-          <li class="skill-tag">ArgoCD</li>
+          <li class="skill-tag">Trivy</li>
+          <li class="skill-tag">Semgrep</li>
+          <li class="skill-tag">Gitleaks</li>
+          <li class="skill-tag">SonarCloud</li>
         </ul>
       </div>
 
@@ -78,8 +80,8 @@
         </div>
         <ul class="skill-list">
           <li class="skill-tag">Docker</li>
-          <li class="skill-tag">Kubernetes</li>
-          <li class="skill-tag">Helm</li>
+          <li class="skill-tag">Docker Compose</li>
+          <li class="skill-tag">AWS ECR</li>
         </ul>
       </div>
 
@@ -91,31 +93,35 @@
         <ul class="skill-list">
           <li class="skill-tag">AWS</li>
           <li class="skill-tag">Terraform</li>
-          <li class="skill-tag">Ansible</li>
+          <li class="skill-tag">ECS Fargate</li>
+          <li class="skill-tag">ALB / NLB</li>
+          <li class="skill-tag">CloudWatch</li>
         </ul>
       </div>
 
       <div class="skill-card">
         <div class="skill-card-title">
           <span class="skill-dot"></span>
-          Scripting
+          Desarrollo web
         </div>
         <ul class="skill-list">
-          <li class="skill-tag">Bash</li>
+          <li class="skill-tag">React</li>
+          <li class="skill-tag">Node.js</li>
+          <li class="skill-tag">Express</li>
           <li class="skill-tag">Python</li>
-          <li class="skill-tag">YAML</li>
+          <li class="skill-tag">JavaScript</li>
         </ul>
       </div>
 
       <div class="skill-card">
         <div class="skill-card-title">
           <span class="skill-dot"></span>
-          Observabilidad
+          Bases de datos
         </div>
         <ul class="skill-list">
-          <li class="skill-tag">Prometheus</li>
-          <li class="skill-tag">Grafana</li>
-          <li class="skill-tag">ELK Stack</li>
+          <li class="skill-tag">PostgreSQL</li>
+          <li class="skill-tag">Redis</li>
+          <li class="skill-tag">Sequelize</li>
         </ul>
       </div>
 
@@ -132,51 +138,59 @@
 
       <div class="project-card">
         <div class="project-header">
-          <span class="project-name">Pipeline CI/CD</span>
-          <!-- TODO: reemplazá # con el link real del proyecto -->
-          <a href="#" class="project-link">↗ ver repo</a>
+          <span class="project-name">RetailStore — Plataforma E-commerce</span>
+          <a href="https://github.com/Luis-Mendaro/RetailStore-Obligatorio" class="project-link" target="_blank">↗ ver repo</a>
         </div>
         <p class="project-desc">
-          <!-- TODO: describí tu proyecto real -->
-          Pipeline automatizado con GitHub Actions que ejecuta tests, build de imagen Docker
-          y deploy a un cluster de Kubernetes en cada push a main.
+          8 microservicios desplegados en AWS ECS Fargate con Terraform. Pipeline CI/CD
+          con GitHub Actions: SAST (Semgrep), SCA y escaneo de imágenes (Trivy), detección
+          de secretos (Gitleaks) y tests de integración con pytest contra el stack real en AWS.
         </p>
         <div class="project-tags">
+          <span class="project-tag">AWS ECS</span>
+          <span class="project-tag">Terraform</span>
           <span class="project-tag">GitHub Actions</span>
           <span class="project-tag">Docker</span>
-          <span class="project-tag">Kubernetes</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Go</span>
         </div>
       </div>
 
       <div class="project-card">
         <div class="project-header">
-          <span class="project-name">Infraestructura con Terraform</span>
-          <a href="#" class="project-link">↗ ver repo</a>
+          <span class="project-name">Patitas Unidas — App de Adopción</span>
+          <a href="https://github.com/Luis-Mendaro/patitas-unidas-front-usuarios" class="project-link" target="_blank">↗ ver repo</a>
         </div>
         <p class="project-desc">
-          Definición de infraestructura en AWS usando Terraform: VPC, EC2, RDS y S3
-          con gestión de estado remoto en S3 + DynamoDB.
+          Plataforma full stack para conectar refugios de animales con personas interesadas
+          en adoptar. Dos frontends independientes (adoptantes y refugios) con React/Redux
+          y API REST con Node.js, Express, Sequelize y PostgreSQL. Auth con JWT.
         </p>
         <div class="project-tags">
-          <span class="project-tag">Terraform</span>
-          <span class="project-tag">AWS</span>
-          <span class="project-tag">IaC</span>
+          <span class="project-tag">React</span>
+          <span class="project-tag">Redux</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Express</span>
+          <span class="project-tag">PostgreSQL</span>
+          <span class="project-tag">JWT</span>
         </div>
       </div>
 
       <div class="project-card">
         <div class="project-header">
           <span class="project-name">Portfolio DevOps</span>
-          <a href="#" class="project-link">↗ ver repo</a>
+          <a href="https://github.com/Luis-Mendaro/portfolio-devops" class="project-link" target="_blank">↗ ver repo</a>
         </div>
         <p class="project-desc">
-          Este mismo portfolio: publicado con GitHub Pages y GitHub Actions.
-          Deploy automático en cada push a main.
+          Este mismo sitio: containerizado con Docker y desplegado en GitHub Pages
+          con pipeline automatizado — security gate (Trivy), quality gate (SonarCloud)
+          y deploy en cada push a main.
         </p>
         <div class="project-tags">
           <span class="project-tag">GitHub Pages</span>
           <span class="project-tag">GitHub Actions</span>
-          <span class="project-tag">HTML/CSS</span>
+          <span class="project-tag">Trivy</span>
+          <span class="project-tag">SonarCloud</span>
         </div>
       </div>
 
@@ -192,20 +206,19 @@
     <div class="edu-list">
 
       <div class="edu-item">
-        <span class="edu-year">2024 — 2025</span>
+        <span class="edu-year">2025 — 2026</span>
         <div>
           <p class="edu-title">Certificado DevOps</p>
-          <!-- TODO: completá con tu institución real -->
           <p class="edu-institution">ORT ATI — Escuela de Tecnología</p>
         </div>
       </div>
 
       <div class="edu-item">
-        <!-- TODO: agregá tu educación real -->
-        <span class="edu-year">20XX — 20XX</span>
+        <span class="edu-year">2024 — 2025</span>
         <div>
-          <p class="edu-title">Tu título o carrera</p>
-          <p class="edu-institution">Tu institución</p>
+          <p class="edu-title">Desarrollo Full Stack</p>
+          <!-- TODO: confirmar nombre de la institución -->
+          <p class="edu-institution">Hack Academy</p>
         </div>
       </div>
 
@@ -222,21 +235,20 @@
       ¿Tenés una oportunidad o proyecto interesante? Escribime.
     </p>
     <div class="contact-links">
-      <!-- TODO: reemplazá los href con tus links reales -->
-      <a href="mailto:tu@email.com" class="contact-link">
-        <span class="contact-icon">✉</span> tu@email.com
+      <a href="mailto:securedev.lm@gmail.com" class="contact-link">
+        <span class="contact-icon">✉</span> securedev.lm@gmail.com
       </a>
-      <a href="https://github.com/tu-usuario" class="contact-link" target="_blank">
+      <a href="https://github.com/Luis-Mendaro" class="contact-link" target="_blank">
         <span class="contact-icon">⌥</span> GitHub
       </a>
-      <a href="https://linkedin.com/in/tu-usuario" class="contact-link" target="_blank">
+      <a href="https://www.linkedin.com/in/luis-devops-developer-34165037a/" class="contact-link" target="_blank">
         <span class="contact-icon">◈</span> LinkedIn
       </a>
     </div>
   </section>
 
   <footer>
-    Hecho con Git, GitHub Pages y mucho <span>☕</span> — <span>TU_NOMBRE</span>
+    Hecho con Git, GitHub Pages y mucho <span>☕</span> — <span>Luis Mendaro</span>
   </footer>
 
 
